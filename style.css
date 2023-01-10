@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #141414;
+  background-image: url(img/sky.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+body::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: "";
+  background: #000;
+  opacity: 0.35;
+}
+
+.forecast {
+  padding: 80px 50px;
+}
+
+.forecast .inner img {
+  filter: invert(1);
+  object-fit: contain;
+}
+
+.forecast .box {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.forecast .box .content {
+  padding-left: 10px;
+}
+
+.forecast .box .content span.title {
+  font-size: 14px;
+}
+
+.forecast .box h4 {
+  margin-top: 5px;
+}
+
+.forecast .description {
+  text-transform: capitalize;
+}
+
+.forecast .search-box input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.forecast .search-box .icon {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.forecast .search-box {
+  display: flex;
+  border-bottom: 2px solid #fff;
+  width: fit-content;
+  margin-top: 25px;
+}
+
+.forecast .search-box ::placeholder {
+  color: #fff;
+}
+
+.forecast .search-box img {
+  width: 25px;
+}
+
+.forecast .unitBtn {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
