@@ -11,6 +11,8 @@ body {
   color: #f0f0f0;
   font-family: "Poppins", sans-serif;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 body::before {
@@ -26,6 +28,7 @@ body::before {
 
 .forecast {
   padding: 80px 50px;
+  width: 100%;
 }
 
 .forecast .inner img {
@@ -89,4 +92,8 @@ body::before {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
+}
+
+.forecast .currentTemp {
+  font-size: 50px;
 }

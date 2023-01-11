@@ -28,6 +28,7 @@ const getWeather = async function (city, units = "metric") {
     populate(data);
   } catch (err) {
     console.error(err);
+    alert("Invalid location. Please try again.");
   }
 };
 
